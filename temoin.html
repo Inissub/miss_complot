@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>observation</title>
+    <link rel="stylesheet" href="semanstyle.css">
+</head>
+<body>
+        <header>
+
+            <nav>
+
+                <div>
+                    <span><strong>Miss Complot </strong></span>
+                </div>
+
+                <ul>
+                    <li><a href="index.html"> Accueil</a></li>
+                </ul>
+            </nav>
+
+    </header>
+    <form  method="post">
+
+        <fieldset>
+            <legend>Remplissez vous informations</legend>
+            <div>
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom">
+            </div>
+            <div>
+                <label for="email">Adresse mail</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div>
+                <label for="pays"> Pays</label>
+                <input type="text" id="pays" name="pays">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Detaillez le phenomène</legend>
+            <div>
+                <label for="date"> date et heure</label>
+                <input type="datetime-local" name="date" id="date">
+            </div>
+            <div>
+                <label for="lieu">le lieu précis</label>
+                <input type="text" id="lieu" name="lieu">
+            </div>
+            <div>
+                <label for="phen">Decrivez le phenomène</label>
+                <textarea name="phen" id="phen" placeholder="avec le plus de detail possible"></textarea>
+            </div>
+            <div>
+                <label for="meteo">condition météo</label>
+                <select name="meteo" id="meteo">
+                    <option value="clair">clair</option>
+                    <option value="nuageux">nuageux</option>
+                    <option value="pluvieux">pluvieux</option>
+                    <option value="orageux">orageux</option>
+                </select>
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Caracterisques de l'objet observé</legend>
+            <div>
+                <label for="forme">Forme</label>
+                <select name="forme" id="forme">
+                    <option value="rond">rond</option>
+                    <option value="oval">oval</option>
+                    <option value="cylindrique">cylindrique</option>
+                    <option value="indefinie">indefinie</option>
+                </select>
+            </div>
+            <div>
+                <label for="couleur">coouleur</label>
+                <input type="text" id="couleur" name="couleur">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend> Des Temoins?</legend>
+            <div>
+                <label for="oui"> Etiez vous seul?</label>
+                <input type="radio" name="seul" id="oui">oui
+            </div>
+            <div>
+                <label for="non">Etiez vous seul?</label>
+                <input type="radio" name="seul" id="non">non
+            </div>
+        </fieldset>
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+</body>
+</html>
